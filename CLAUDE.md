@@ -39,12 +39,14 @@ The shared, versioned method library. Not client code — that lives in client r
 ```
 obsidian-labs-skills/
 ├── README.md                        ← Library purpose + how clients reference it
-├── CHANGELOG.md                     ← Semver log (currently v0.2.0)
+├── CHANGELOG.md                     ← Semver log (currently v0.3.0)
 ├── skills/
 │   ├── README.md                    ← Skills index
 │   ├── project-state-update/        ← How to update living docs at end of session
 │   │   └── SKILL.md
-│   └── new-client-spinup/           ← How to scaffold a new client ops repo
+│   ├── new-client-spinup/           ← How to scaffold a new client ops repo
+│   │   └── SKILL.md
+│   └── atlas-github-brain/          ← How to wire Atlas to a client's GitHub repo as its live KB
 │       └── SKILL.md
 ├── templates/                       ← Empty — grows from real client work
 └── meta/
@@ -56,27 +58,16 @@ obsidian-labs-skills/
 
 ---
 
-## Current Version: v0.2.0
+## Current Version: v0.3.0
 
 ### Active Skills
 - `project-state-update` — updates living docs at end of session
 - `new-client-spinup` — scaffolds a new client ops repo end-to-end
+- `atlas-github-brain` — wires Atlas to read its KB live from the client's GitHub repo, replacing hardcoded system prompts
 
-### Skills Pending Promotion (from Chem-Dry work)
-These patterns exist in chem-dry-ops but haven't been extracted into reusable skills yet:
-- `booking-funnel-deploy` — deploy a 4-step Next.js booking funnel + GHL webhook
-- `ghl-subaccount-provision` — stand up a GHL sub-account for a new client
-- `hcp-api-integration` — connect HCP (Housecall Pro) API to Supabase via n8n
-- `a2p-registration-concierge` — walk a client through A2P SMS registration
-- `weekly-ops-report-generator` — n8n workflow that generates Monday reports
-- `chem-dry-redeploy` — meta-skill for forking the Chem-Dry stack for new home-service clients
+### Pending Promotion
 
-### Skills Pending Promotion (from Hardesty work)
-- `ghl-lead-nurture-workflow` — Day 0/1/3/7 lead follow-up sequence
-- `ghl-approval-workflow` — owner approval via SMS one-click link
-- `elevenlabs-voice-agent-setup` — ElevenLabs + Twilio + GHL routing
-- `booking-form-with-lead-scoring` — HTML booking form + Google Maps + lead score + GHL webhook
-- `atlas-brain-deploy` — deploy the 7-tab Atlas Brain app to Vercel with streaming
+See `skills/README.md` for the full active skills index and pending-promotion backlog.
 
 ---
 
